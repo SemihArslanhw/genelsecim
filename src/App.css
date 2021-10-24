@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
+  background:black;
+  width: 100%;
+  height: 1024px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  
+}
+
+@media only screen and (max-width: 600px) {
+ .orta{
+   flex-direction: column;
+   
+ }
+}
+
+.gün , .saat , .dakika , .saniye {
+  background-color: blue;
+  font-style: italic;
+  width: 100px;
+  border-radius: 10%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+ color: white;
+
+}
+.rte{
+  position: absolute;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  right: 0%;
+  width: 50%;
+  height:60%;
+  bottom: 50%;
+  transform: rotate(180deg);
+  align-items: center;
+  justify-content: center;
+  z-index: inherit;
+  background-image: url("https://pngarchive.com/public/uploads/small/1001573234996jog2srzeifecpizu99ebx932ahunpy3qrgyydwkrd5qyb21zwn2d0ljczqa7dkxhrv7d90uo9wyzgpgjcvnilpaf639hm5ly32go.png");
+}
+.kk{
+  position: absolute;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  right: 50%;
+  width: 50%;
+  height:60%;
+  bottom: 50%;
+  transform: rotate(180deg);
+  align-items: center;
+  justify-content: center;
+  z-index: inherit;
+  background-image: url("https://pngarchive.com/public/uploads/preview/kemal-kilicdaroglu-115442661163ima5k5pxx.png");
+}
+.kkKapat{
+  position: absolute;
+  transform: rotate(180deg);
+  top:50%;
+}
+.rteKapat{
+  position: absolute;
+  transform: rotate(180deg);
+  top:50%;
+}
+
+.sag , .sol{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.chp , .iyi , .apk , .mhp{
+ 
+  background-size:cover ;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+.baslık{
   color: white;
+  margin-bottom: 40px;
+}
+.bod{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.orta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: x-large;
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border-radius: 5%;
+  opacity: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.chp{
+  background-image: url("https://ataturkicimizde.com/wp-content/uploads/2019/04/Cumhuriyet-Halk-Partisi-tarihi.jpg");
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iyi{
+  background-image: url("https://i4.hurimg.com/i/hurriyet/75/750x422/5b030f58b5a7931380d449a4.jpg");
+}
+.apk{
+  background-image: url("https://cdnuploads.aa.com.tr/uploads/Contents/2020/11/23/thumbs_b_c_a4a8c261eeb5c67a45e91aeb5ca12e43.jpg");
+}
+.mhp{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxA40_bEMro8Gl5DD4k4LJoKgtsYY3f0vnA&usqp=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");
 }
